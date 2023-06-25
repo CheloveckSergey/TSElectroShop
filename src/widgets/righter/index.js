@@ -1,0 +1,1 @@
+export { default as Righter } from './ui/index';

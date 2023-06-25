@@ -1,0 +1,18 @@
+.add-brand-panel {
+  padding: 20px;
+  background-color: var(--light-background-color);
+
+  label {
+    margin-right: 20px;
+  }
+
+  input {
+    margin-right: 20px;
+  }
+
+  button {
+    padding: 10px;
+    background-color: orange;
+    color: white;
+  }
+}

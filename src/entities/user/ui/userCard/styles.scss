@@ -1,0 +1,17 @@
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+}

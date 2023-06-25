@@ -1,0 +1,14 @@
+.products-table {
+  background-color: var(--light-background-color);
+  grid-column: span 2;
+
+  td {
+    padding: 20px;
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+  }
+}

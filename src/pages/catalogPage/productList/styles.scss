@@ -1,0 +1,31 @@
+.catalog {
+  
+  .product-list {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: 30px;
+
+    button {
+      font-size: 1.5rem;
+      color: rgb(159,163,166);
+      cursor: pointer;
+
+      &.checked {
+        color: rgb(53,54,58);
+      }
+
+      &:hover {
+        color: orange;
+      }
+    }
+  }
+}

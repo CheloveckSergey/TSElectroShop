@@ -1,0 +1,41 @@
+.user-settings-panel {
+  display: flex;
+  gap: 50px;
+
+  .avatar-section {
+
+    img {
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+    }
+
+    label {
+
+      h4 {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        background: var(--black-color);
+        color: var(--light-font-color);
+        cursor: pointer;
+      } 
+
+      input {
+        display: none;
+      }
+    }
+
+    button.update-avatar {
+      width: 100%;
+      margin-top: 5px;
+      padding: 10px 0;
+      background-color: orange;
+      color: var(--light-font-color);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+  }
+  
+}

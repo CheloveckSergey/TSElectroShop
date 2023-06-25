@@ -1,0 +1,74 @@
+.desc-panel {
+  display: flex;
+  height: 500px;
+  width: 1000px;
+  background-color: rgb(228,234,234);
+
+  img {
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+
+    button.close-button {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      color: rgb(159,163,166);
+
+      &:hover {
+        color: rgb(55,56,60);
+      }
+    }
+
+    .base {
+      
+      h1 {
+        font-weight: 400;
+      }
+
+      h4 {
+        font-weight: 400;
+        color: rgb(159,163,166);
+      }
+
+      table {
+        margin: 20px 0;
+
+        th {
+          font-size: 0.9rem;
+          font-weight: 400;
+          color: rgb(159,163,166);
+        }
+
+        td {
+          padding: 10px 30px;
+          font-size: 1.3rem;
+          font-weight: 400;
+
+          .qty {
+            display: flex;
+            gap: 15px;
+
+            p {
+              margin: 0;
+              font-weight: inherit;
+            }
+          }
+        }
+      }
+
+      p {
+        font-weight: 300;
+      }
+    }
+  }
+}

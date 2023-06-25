@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+:root {
+  --light-font-color: rgb(221,221,221);
+  --primary-font-color: rgb(55,56,60);
+  --light-background-color: rgb(228,234,234);
+  --primary-background-color: rgb(221,221,221);
+  --green-color: rgb(34, 125, 123);
+  --black-color: rgb(55,56,60);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-font-color);
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &.active {
+    color: orange;
+  }
+}
+
+

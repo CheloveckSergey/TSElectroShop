@@ -1,0 +1,118 @@
+.left-panel {
+  position: realtive;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100px;
+  border-right: 3px solid rgb(34, 125, 123);
+  // color: rgb(212, 212, 212);
+
+  button.sidebar-button {
+    position: absolute;
+    top: 50px;
+    font-size: 2rem;
+    transition: font-size 0.1s;
+
+    &:hover {
+      font-size: 2.3rem;
+    }
+
+    &:active {
+      font-size: 2rem;
+    }
+  }
+
+  .sidebar {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100px;
+    width: 0;
+    padding: 0;
+    background-color: rgb(34, 125, 123);
+    transition: width 0.3s;
+    z-index: 9999;
+    color: var(--light-font-color);
+
+    &.opened {
+      display: block;
+      width: 200px;
+      padding: 20px 20px;
+    }
+
+    h4 {
+      margin-bottom: 100px;
+      font-weight: 300;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+      font-weight: 400;
+      cursor: pointer;
+
+      &:hover {
+        color: orange;
+      }
+    }
+
+    .user-menu {
+      margin-top: 100px;
+    }
+
+    .auth-point {
+      position: absolute;
+      bottom: 50px;
+    }
+  }
+
+  // .filterbar {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 5px;
+  //   width: 100%;
+
+  //   .filter-panel {
+  //     position: relative;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     height: 100px;
+  //     background-color: orange;
+  //     color: white;
+  //     cursor: pointer;
+
+  //     &.showed {
+  //       .options-container {
+  //         display: flex;
+  //       }
+  //     }
+
+  //     .options-container {
+  //       position: absolute;
+  //       left: 100px;
+  //       z-index: 9999;
+  //       display: none;
+  //       flex-direction: column;
+  //       gap: 5px;
+
+  //       .option {
+  //         display: flex;
+  //         justify-content: center;
+  //         align-items: center;
+  //         height: 100px;
+  //         width: 100px;
+  //         background-color: orange;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .user-card-container {
+    position: absolute;
+    bottom: 50px;
+  }
+}

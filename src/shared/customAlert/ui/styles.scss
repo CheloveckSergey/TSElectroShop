@@ -1,0 +1,31 @@
+.alert-container {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 9999;
+
+  .alert-panel {
+    height: 100px;
+    width: 250px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--black-color);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s;
+
+    &.showen {
+      opacity: 100%;
+      transform: none;
+    }
+    
+    h3 {
+      color: var(--light-font-color);
+      margin-bottom: 10px;
+    }
+  
+    h4 {
+      color: orange;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.product-card {
+  width: 200px;
+
+  .upper-block {
+    position: relative;
+    height: 300px;
+    // width: 200px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .rate-panel {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 20px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.518);
+      color: white;
+    }
+
+    .buy-panel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background-color: rgba(0, 0, 0, 0.498);
+
+      button {
+        height: 50px;
+        width: 50px;
+        font-size: 2rem;
+        color: rgb(221,221,221);
+        transition: font-size 0.05s;
+
+        &:hover {
+          color: orange;
+        }
+
+        &:active {
+          font-size: 1.5rem;
+        }
+
+        .icon {
+          color: white;
+        }
+      }
+    }
+
+    &:hover .buy-panel {
+      display: flex;
+    }
+  }
+
+  .lower-block {
+    color: rgb(45, 56, 64);
+
+    h6 {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 400;
+
+      &.added {
+        color: rgb(203, 108, 130);
+      }
+
+      &:hover {
+        color: orange;
+      }
+    }
+  }
+}
